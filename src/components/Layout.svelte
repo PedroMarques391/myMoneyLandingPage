@@ -24,10 +24,7 @@
     };
 </script>
 
-<div
-    id="#top"
-    class="flex flex-col gap-5 bg-[#71c7ec] text-white min-h-screen relative"
->
+<div class="flex flex-col gap-5 bg-[#71c7ec] text-white min-h-screen relative">
     <Header />
     <main class="flex flex-1 flex-col max-w-7xl w-full mx-auto p-5">
         <slot></slot>
@@ -38,7 +35,7 @@
             on:click={scrollToTop}
             in:blur={{ duration: 1000 }}
             out:blur={{ duration: 1000 }}
-            class="fixed bottom-20 right-28 bg-black/30 rounded-lg"
+            class="fixed bottom-5 right-5 md:bottom-20 md:right-28 bg-black/30 rounded-lg"
         >
             <IconArrowUp class="w-12 h-12" />
         </button>

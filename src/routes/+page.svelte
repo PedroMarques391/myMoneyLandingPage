@@ -12,7 +12,7 @@
 
 <Hero />
 
-<section class="w-full md:w-[90%] mx-auto my-5 space-y-6">
+<section id="about" class="w-full md:w-[90%] mx-auto my-5 space-y-6">
     <h1
         class="text-2xl md:text-3xl text-center md:text-left font-semibold tracking-wide"
     >
