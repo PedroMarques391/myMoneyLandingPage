@@ -5,7 +5,7 @@
     import { IconArrowUp } from "@tabler/icons-svelte";
     import { blur } from "svelte/transition";
 
-    let showButtton: boolean = true;
+    let showButtton: boolean = false;
 
     function handleScroll() {
         showButtton = window.scrollY > 200;
