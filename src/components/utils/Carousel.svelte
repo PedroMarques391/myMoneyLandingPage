@@ -47,7 +47,7 @@
     });
 </script>
 
-<div class="relative w-full md:w-4/5 lg:w-3/5 overflow-hidden rounded-lg">
+<div class="relative w-full overflow-hidden rounded-lg">
     <button
         class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 z-10 rounded-full shadow-md hover:shadow-lg disabled:bg-gray-200 disabled:shadow-none disabled:text-gray-400 disabled:cursor-not-allowed transition-all duration-300 ease-in-out"
         on:click={prevSlide}

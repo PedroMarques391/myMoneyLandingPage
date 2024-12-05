@@ -55,19 +55,26 @@
             </p>
         </div>
 
-        <div class="flex flex-col items-center gap-5 w-full">
-            <Carousel {images} />
-            <video
-                src="/videos/myMoney.mp4"
-                title="Demonstração do MyMoney"
-                class="w-full md:w-4/5 h-60 rounded-lg shadow-md"
-                controls
-                autoplay
-                muted
-                loop
-            >
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+        <div
+            class="flex flex-col md:flex-row items-center justify-center gap-10 w-full"
+        >
+            <div class="flex-1 max-w-md md:max-w-full">
+                <Carousel {images} />
+            </div>
+
+            <div class="flex-1 max-w-md md:max-w-full">
+                <video
+                    src="/video/myMoney.mp4"
+                    title="Demonstração do MyMoney"
+                    class="w-full h-full md:h-[400px] lg:h-[500px] rounded-lg object-contain"
+                    controls
+                    autoplay
+                    muted
+                    loop
+                >
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
         </div>
     </div>
 </section>
