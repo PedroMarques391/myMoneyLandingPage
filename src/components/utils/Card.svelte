@@ -23,7 +23,11 @@
             >
                 {title}
             </h2>
-            <p class="text-sm font-serif">{description}</p>
+            <p
+                class="text-sm font-serif text-justify break-words hyphens-auto md:text-left"
+            >
+                {description}
+            </p>
         </div>
         <button
             class="absolute top-3 left-3 bg-white/70 text-[#189ad3] p-2 rounded-full flex items-center justify-center hover:text-[#71c7ec] transition-all duration-300"
@@ -35,7 +39,11 @@
     <div
         class="bg-white/50 text-black/80 rounded-2xl space-y-4 overflow-hidden p-5"
     >
-        <p class="text-sm font-serif">"{testimonials}"</p>
+        <p
+            class="text-sm font-serif text-justify md:text-left hyphens-auto break-words"
+        >
+            "{testimonials}"
+        </p>
         <div class="flex flex-row items-center gap-3">
             <User class="w-6 h-6 text-black" />
             <div class="flex flex-col">

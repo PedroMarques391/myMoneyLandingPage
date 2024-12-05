@@ -30,7 +30,7 @@
                 </button>
                 <button
                     class="border border-[#189ad3] p-2 md:p-3 flex-1 rounded-2xl text-[#189ad3] font-semibold hover:bg-[#71c7ec] hover:text-white transition-all duration-300 text-sm md:text-base"
-                    >Saiba mais</button
+                    ><a href="#about">Saiba mais</a></button
                 >
             </div>
 

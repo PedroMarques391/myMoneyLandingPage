@@ -20,14 +20,15 @@
     </h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <p
-            class="bg-white/60 text-black/80 py-0 md:py-5 px-3 text-left rounded-xl place-content-center text-sm h-32 md:h-auto"
+            class="bg-white/60 text-black/80 py-2 md:py-5 px-5 text-justify md:text-left rounded-xl place-content-center text-sm h-32 md:h-auto hyphens-auto break-words"
         >
-            O <b>MyMoney</b> foi desenvolvido para se adaptar a todos os tipos de
-            usuários. Com uma interface simples, intuitiva e funcional, o app transforma
-            o gerenciamento financeiro em uma experiência descomplicada e eficiente.
+            O <b class="text-[#189ad3]">MyMoney</b> foi desenvolvido para se adaptar
+            a todos os tipos de usuários. Com uma interface simples, intuitiva e
+            funcional, o app transforma o gerenciamento financeiro em uma experiência
+            descomplicada e eficiente.
         </p>
         <p
-            class="bg-white/60 text-black/80 py-0 md:py-5 px-3 text-left rounded-xl place-content-center text-sm h-32 md:h-auto"
+            class="bg-white/60 text-black/80 py-2 md:py-5 px-5 text-justify md:text-left rounded-xl place-content-center text-sm h-32 md:h-auto hyphens-auto break-words"
         >
             Organize, acompanhe e planeje suas finanças de forma prática e
             inteligente. Descubra como o <b>MyMoney</b> pode ser o parceiro ideal
@@ -122,7 +123,7 @@
 </section>
 
 <section class="w-full md:w-[90%] mx-auto my-5 space-y-6">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-6 md:gap-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-6 md:gap-y-12">
         <h1
             class="text-xl font-semibold tracking-wider text-center md:text-left"
         >
