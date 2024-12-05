@@ -50,8 +50,7 @@
                 Veja como o MyMoney pode facilitar sua vida
             </h2>
             <p class="text-gray-600 text-sm md:text-base">
-                Veja como o MyMoney pode facilitar sua vida. Confira o vídeo e
-                imagens abaixo.
+                Confira o vídeo e imagens abaixo.
             </p>
         </div>
 
