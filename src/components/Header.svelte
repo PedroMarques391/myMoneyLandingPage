@@ -21,7 +21,7 @@
 </script>
 
 <header
-    class={`bg-[#189ad3] text-white sticky top-0 left-0 z-10 ${changeSizeHeader ? "shadow-black/50 shadow-md h-22" : "h-20"} transition-all duration-300 ease-in-out`}
+    class={`bg-[#189ad3] text-white sticky top-0 left-0 z-30 ${changeSizeHeader ? "shadow-black/50 shadow-md h-22" : "h-20"} transition-all duration-300 ease-in-out`}
 >
     <section
         class="flex flex-row justify-between md:justify-around items-center p-5 h-20 w-full md:max-w-7xl mx-auto"

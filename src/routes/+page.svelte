@@ -8,6 +8,7 @@
         IconSearch,
         IconUser,
     } from "@tabler/icons-svelte";
+    import Demonstration from "../components/utils/Demonstration.svelte";
 </script>
 
 <Hero />
@@ -121,6 +122,8 @@
         </ul>
     </div>
 </section>
+
+<Demonstration />
 
 <section class="w-full md:w-[90%] mx-auto my-5 space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-6 md:gap-y-12">

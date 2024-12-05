@@ -38,9 +38,9 @@
             on:click={scrollToTop}
             in:blur={{ duration: 1000 }}
             out:blur={{ duration: 1000 }}
-            class="fixed bottom-5 right-5 md:bottom-20 md:right-28 bg-black/30 rounded-lg"
+            class="fixed bottom-5 right-0 md:bottom-20 md:right-28 bg-black/30 md:bg-white md:rounded-lg z-20 rounded-s-lg"
         >
-            <IconArrowUp class="w-12 h-12" />
+            <IconArrowUp class="w-10 h-10 md:w-12 md:h-12" />
         </button>
     {/if}
 </div>
