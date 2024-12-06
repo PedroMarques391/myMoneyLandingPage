@@ -39,7 +39,7 @@
         </div>
 
         <div>
-            <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+            <h1 class="text-lg font-semibold mb-4">Redes Sociais</h1>
             <p class="text-sm mb-4">
                 Siga-nos nas redes sociais e fique por dentro das novidades:
             </p>

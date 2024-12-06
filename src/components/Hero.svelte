@@ -57,10 +57,13 @@
                     <p>Baixar APP</p>
                     <BrandGooglePlay class="w-5 h-5" />
                 </button>
-                <button
-                    class="border border-[#189ad3] p-2 md:p-3 flex-1 rounded-2xl text-[#189ad3] font-semibold hover:bg-[#71c7ec] hover:text-white transition-all duration-300 text-sm md:text-base"
-                    ><a href="#about">Saiba mais</a></button
+
+                <a
+                    class="border border-[#189ad3] p-2 md:p-3 flex-1 rounded-2xl text-[#189ad3] font-semibold hover:bg-[#71c7ec] hover:text-white transition-all duration-300 text-sm md:text-base text-center"
+                    href="#about"
                 >
+                    Saiba mais
+                </a>
             </div>
 
             <ul class="mt-4 space-y-2 text-gray-700">

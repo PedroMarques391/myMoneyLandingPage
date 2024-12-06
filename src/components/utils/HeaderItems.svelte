@@ -6,7 +6,7 @@
 </script>
 
 <li
-    role="menuitem"
+    aria-describedby="menu-item-{text}"
     class="font-bold hover:text-white/70 transition-transform duration-300 transform hover:scale-110"
 >
     <a on:click={() => isOpen.set(false)} {href}>{text}</a>
