@@ -2,6 +2,19 @@
     import BrandGooglePlay from "@tabler/icons-svelte/icons/brand-google-play";
     import { onMount } from "svelte";
 
+    let AOS: any;
+
+    onMount(async () => {
+        if (typeof window !== "undefined") {
+            const aos = await import("aos");
+            AOS = aos.default;
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+        }
+    });
+
     const text: string = "Controle suas finanças como nunca antes";
     let displayText: string = "";
     let index: number = 0;
@@ -51,15 +64,27 @@
             </div>
 
             <ul class="mt-4 space-y-2 text-gray-700">
-                <li class="flex items-center">
+                <li
+                    data-aos="fade-right"
+                    data-aos-duration={1000}
+                    class="flex items-center"
+                >
                     <span class="text-green-500 text-lg">✔</span>
                     <span class="ml-2">Fácil de usar</span>
                 </li>
-                <li class="flex items-center">
+                <li
+                    data-aos="fade-right"
+                    data-aos-duration={2000}
+                    class="flex items-center"
+                >
                     <span class="text-green-500 text-lg">✔</span>
                     <span class="ml-2">Seguro e confiável</span>
                 </li>
-                <li class="flex items-center">
+                <li
+                    data-aos="fade-right"
+                    data-aos-duration={3000}
+                    class="flex items-center"
+                >
                     <span class="text-green-500 text-lg">✔</span>
                     <span class="ml-2">Tudo em um só lugar</span>
                 </li>

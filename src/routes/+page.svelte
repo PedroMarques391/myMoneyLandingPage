@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Hero from "../components/Hero.svelte";
     import Card from "../components/utils/Card.svelte";
     import {
@@ -9,6 +9,20 @@
         IconUser,
     } from "@tabler/icons-svelte";
     import Demonstration from "../components/utils/Demonstration.svelte";
+    import { onMount } from "svelte";
+
+    let AOS: any;
+
+    onMount(async () => {
+        if (typeof window !== "undefined") {
+            const aos = await import("aos");
+            AOS = aos.default;
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+        }
+    });
 </script>
 
 <Hero />
@@ -21,6 +35,7 @@
     </h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <p
+            data-aos="flip-left"
             class="bg-white/60 text-black/80 py-2 md:py-5 px-5 text-justify md:text-left rounded-xl place-content-center text-sm h-32 md:h-auto hyphens-auto break-words"
         >
             O <b class="text-[#189ad3]">MyMoney</b> foi desenvolvido para se adaptar
@@ -29,6 +44,7 @@
             descomplicada e eficiente.
         </p>
         <p
+            data-aos="flip-right"
             class="bg-white/60 text-black/80 py-2 md:py-5 px-5 text-justify md:text-left rounded-xl place-content-center text-sm h-32 md:h-auto hyphens-auto break-words"
         >
             Organize, acompanhe e planeje suas finanças de forma prática e
@@ -37,7 +53,7 @@
         </p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+    <div data-aos="fade-up" class="grid grid-cols-2 md:grid-cols-3 gap-5">
         <Card
             primary
             image="/family.jpg"
@@ -63,7 +79,11 @@
 <section
     class="my-5 space-y-6 gap-x-20 bg-white/60 grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden"
 >
-    <div class="flex justify-center md:justify-end mt-10">
+    <div
+        data-aos="fade-right"
+        data-aos-duration={1000}
+        class="flex justify-center md:justify-end mt-10"
+    >
         <img
             src="/demo.png"
             alt="Print da página inicial do aplicativo"
@@ -71,7 +91,7 @@
         />
     </div>
 
-    <div class="my-10">
+    <div data-aos="fade-left" data-aos-duration={1000} class="my-10">
         <ul
             class="space-y-4 mx-auto md:mx-0 w-4/5 md:w-4/5 lg:w-3/5 mt-0 mb-10 md:mb-0 md:mt-12"
         >
@@ -125,7 +145,11 @@
 
 <Demonstration />
 
-<section class="w-full md:w-[90%] mx-auto my-5 space-y-6">
+<section
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    class="w-full md:w-[90%] mx-auto my-5 space-y-6"
+>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-6 md:gap-y-12">
         <h1
             class="text-xl font-semibold tracking-wider text-center md:text-left"
