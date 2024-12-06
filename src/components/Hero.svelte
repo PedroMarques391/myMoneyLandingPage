@@ -1,5 +1,21 @@
-<script>
+<script lang="ts">
     import BrandGooglePlay from "@tabler/icons-svelte/icons/brand-google-play";
+    import { onMount } from "svelte";
+
+    const text: string = "Controle suas finanças como nunca antes";
+    let displayText: string = "";
+    let index: number = 0;
+
+    onMount(() => {
+        const type = () => {
+            if (index < text.length) {
+                displayText += text[index];
+                index++;
+                setTimeout(type, 100);
+            }
+        };
+        type();
+    });
 </script>
 
 <main
@@ -12,13 +28,13 @@
             <h1
                 class="text-2xl md:text-3xl font-semibold tracking-wider text-[#189ad3] leading-6 md:leading-none"
             >
-                Controle suas finanças como nunca antes
+                {displayText}
             </h1>
             <h3 class="text-sm font-sans font-medium mt-2">
-                O <b>MyMoney</b> é seu assistente fincanceiro, projetado para ajudar
-                você a registrar, monitorar e organizar suas despesas e receitas
-                de maneira eficaz. Transforme sua gestão financeira em algo simples
-                e efiencente.
+                O <b class="text-[#189ad3]">MyMoney</b> é seu assistente financeiro,
+                projetado para ajudar você a registrar, monitorar e organizar suas
+                despesas e receitas de maneira eficaz. Transforme sua gestão financeira
+                em algo simples e eficiente.
             </h3>
             <div class="my-4 flex flex-row gap-3">
                 <button

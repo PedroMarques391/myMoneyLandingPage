@@ -15,19 +15,13 @@
     let autoRotateInterval: any;
 
     const nextSlide = (): void => {
-        if (currentIndex < images.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
+        currentIndex < images.length - 1
+            ? (currentIndex += 2)
+            : (currentIndex = 0);
     };
 
     const prevSlide = (): void => {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = images.length - 1;
-        }
+        currentIndex > 0 ? (currentIndex -= 2) : (currentIndex = 0);
     };
 
     const startAutoRotate = (intervalMs = 3000): void => {
@@ -47,7 +41,7 @@
     });
 </script>
 
-<div class="relative w-full overflow-hidden rounded-lg">
+<div class="relative overflow-hidden rounded-lg">
     <button
         class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 z-10 rounded-full shadow-md hover:shadow-lg disabled:bg-gray-200 disabled:shadow-none disabled:text-gray-400 disabled:cursor-not-allowed transition-all duration-300 ease-in-out"
         on:click={prevSlide}

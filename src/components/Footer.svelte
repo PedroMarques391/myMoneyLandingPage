@@ -4,23 +4,22 @@
         IconBrandLinkedin,
         IconX,
     } from "@tabler/icons-svelte";
+    import Logo from "./utils/Logo.svelte";
 </script>
 
 <footer class="bg-[#189ad3] text-white py-8">
     <div
         class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8"
     >
-        <!-- Sobre -->
-        <div>
-            <h3 class="text-lg font-semibold mb-4">Sobre o MyMoney</h3>
-            <p class="text-sm">
+        <div class="flex flex-col items-center md:items-start gap-y-5">
+            <Logo />
+            <p class="text-sm text-justify hyphens-auto break-words">
                 O MyMoney é o aplicativo ideal para você organizar suas finanças
                 de forma simples e eficiente. Nosso objetivo é ajudar você a
                 alcançar suas metas financeiras.
             </p>
         </div>
 
-        <!-- Links Úteis -->
         <div>
             <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
             <ul class="space-y-2">
@@ -39,7 +38,6 @@
             </ul>
         </div>
 
-        <!-- Redes Sociais -->
         <div>
             <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
             <p class="text-sm mb-4">

@@ -13,7 +13,7 @@
 
 {#if primary}
     <div
-        class={`bg-white/50 text-black/80 rounded-2xl overflow-hidden relative ${className}`}
+        class={`bg-white/50 text-black/80 rounded-2xl overflow-hidden relative  transition-transform hover:scale-105 duration-300 ${className}`}
     >
         <img src={image} alt={title} class="w-full h-64 object-cover" />
 
@@ -37,7 +37,7 @@
     </div>
 {:else}
     <div
-        class="bg-white/50 text-black/80 rounded-2xl space-y-4 overflow-hidden p-5"
+        class="bg-white/50 text-black/80 rounded-2xl space-y-4 overflow-hidden p-5 transition-transform hover:scale-105 duration-300"
     >
         <p
             class="text-sm font-serif text-justify md:text-left hyphens-auto break-words"
