@@ -46,8 +46,12 @@
         class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 z-10 rounded-full shadow-md hover:shadow-lg disabled:bg-gray-200 disabled:shadow-none disabled:text-gray-400 disabled:cursor-not-allowed transition-all duration-300 ease-in-out"
         on:click={prevSlide}
         disabled={currentIndex === 0}
+        aria-label="Anterior"
     >
-        <ArrowLeft class="w-6 h-6 text-gray-600" />
+        <ArrowLeft
+            aria-label="Seta para esquerda"
+            class="w-6 h-6 text-gray-600"
+        />
     </button>
 
     <ul
@@ -65,7 +69,11 @@
         class="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md text-gray-950 hover:shadow-lg z-10 disabled:bg-gray-200 disabled:shadow-none disabled:text-gray-400 disabled:cursor-not-allowed transition-all duration-300 ease-in-out"
         on:click={nextSlide}
         disabled={currentIndex === images.length - 1}
+        aria-label="Seguinte"
     >
-        <ArrowRight class="w-6 h-6 text-gray-600" />
+        <ArrowRight
+            aria-label="Seta para direita"
+            class="w-6 h-6 text-gray-600"
+        />
     </button>
 </div>

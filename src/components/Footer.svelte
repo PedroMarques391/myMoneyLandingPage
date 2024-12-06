@@ -1,8 +1,8 @@
 <script>
     import {
         IconBrandFacebook,
+        IconBrandInstagram,
         IconBrandLinkedin,
-        IconX,
     } from "@tabler/icons-svelte";
     import Logo from "./utils/Logo.svelte";
 </script>
@@ -21,7 +21,7 @@
         </div>
 
         <div>
-            <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+            <h1 class="text-lg font-semibold mb-4">Links Úteis</h1>
             <ul class="space-y-2">
                 <li><a href="/about" class="hover:underline">Quem Somos</a></li>
                 <li>
@@ -47,6 +47,7 @@
                 <a
                     href="https://facebook.com"
                     target="_blank"
+                    aria-label="Link para o github"
                     class="hover:opacity-80"
                 >
                     <IconBrandFacebook class="h-7 w-7" />
@@ -54,13 +55,15 @@
                 <a
                     href="https://twitter.com"
                     target="_blank"
+                    aria-label="Link para o Instagram"
                     class="hover:opacity-80"
                 >
-                    <IconX class="h-7 w-7" />
+                    <IconBrandInstagram class="h-7 w-7" />
                 </a>
                 <a
                     href="https://linkedin.com"
                     target="_blank"
+                    aria-label="Link para o Linkedin"
                     class="hover:opacity-80"
                 >
                     <IconBrandLinkedin class="h-7 w-7" />

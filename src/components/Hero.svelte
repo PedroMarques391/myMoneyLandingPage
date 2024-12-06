@@ -43,13 +43,13 @@
             >
                 {displayText}
             </h1>
-            <h3 class="text-sm font-sans font-medium mt-2">
+            <h2 class="text-sm font-sans font-medium mt-2">
                 O <b class="text-[#189ad3]">MyMoney</b> é seu assistente financeiro,
                 projetado para ajudar você a registrar, monitorar e organizar suas
                 despesas e receitas de maneira eficaz. Transforme sua gestão financeira
                 em algo simples e eficiente.
-            </h3>
-            <div class="my-4 flex flex-row gap-3">
+            </h2>
+            <div class="my-4 flex flex-row gap-6">
                 <button
                     class="bg-[#189ad3] hover:bg-[#71c7ec] transition-all duration-300 text-white font-semibold p-2 md:p-3 flex-1 rounded-2xl flex items-center justify-center space-x-2 text-sm md:text-base"
                     aria-label="Baixar APP"
